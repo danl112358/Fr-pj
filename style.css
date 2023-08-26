@@ -213,6 +213,7 @@ body.dark #portafolio .titulo-seccion2 {
 #icono-nav {
   color: #fff;
   display: none;
+  color: white;
 }
 
 #inicio .contenido header .contenido-header .redes a {
@@ -319,7 +320,8 @@ body.dark #portafolio .titulo-seccion2 {
 }
 
 #Servicios .fila .servicio {
-  max-width: 350px;
+  max-width: 100%;
+  width: 400px;
   background-color: #fff;
   padding: 30px;
   margin: 0 5px;
@@ -558,6 +560,7 @@ body.dark #portafolio .titulo-seccion2 {
   margin: 0 10px;
   position: relative;
   overflow: hidden;
+  border: 2px solid #03312E;
 }
 
 #portafolio .fila .proyecto img {
@@ -588,4 +591,72 @@ body.dark #portafolio .titulo-seccion2 {
 #portafolio .fila .proyecto:hover .info {
   opacity: 1;
   bottom: 0;
+}
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+  .redes {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+  }
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+  #inicio .contenido .Presentacion h2 {
+    font-size: 25px;
+  }
+  #Sobremi {
+    padding: 50px 0;
+    display: block;
+  }
+  #Sobremi .contenedor-foto {
+    max-width: 200px;
+    margin: auto;
+  }
+  #Sobremi .contenedor-foto img {
+    padding: 8px;
+  }
+  #Sobremi .sobremi .titulo-de-seccion {
+    text-align: center;
+  }
+  #Sobremi .sobremi h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  #Servicios {
+    padding: 50px 15px;
+  }
+  #Servicios .fila {
+    display: block;
+  }
+  #Servicios .fila .servicio {
+    margin: 10px auto;
+  }
+  .contenedor-skills {
+    padding: 50px 20px;
+  }
+  #portafolio {
+    padding: 50px 0;
+  }
+  #portafolio .fila {
+    display: block;
+  }
+  #portafolio .fila .proyecto {
+    margin: 10px auto;
+  }
 }/*# sourceMappingURL=style.css.map */
